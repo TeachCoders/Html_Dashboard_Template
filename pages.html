@@ -32,7 +32,7 @@
             <div class="col-lg-2 sidebaare">
                <aside>
                   <nav class="sidebar py-2 mb-4">
-                     <ul class="nav flex-column" id="nav_accordion">                      
+                      <ul class="nav flex-column" id="nav_accordion">                      
                         <li class="nav-item">
                            <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#"> Pages <i class="bi small bi-caret-down-fill"></i> </a>
                            <ul id="menu_item1" class="submenu collapse" data-bs-parent="#nav_accordion">
@@ -54,9 +54,9 @@
                               <li><a class="nav-link" href="/admin/products/">All Products</a></li>
                               <li><a class="nav-link" href="/admin/products/add-products/">Add Products </a></li>              
                            </ul>
-                        </li>                      
+                        </li>                     
                      </ul>
-                     
+
                   </nav>
                </aside>
             </div>
@@ -64,68 +64,46 @@
 
               <div class="dashboard-content-area">
                 <!-- put your contente -->
-<h1>All Document</h1>
-               <div class="row">
-                  <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-info">
-                      <div class="inner">
-                        <h3>150</h3>
-        
-                        <p>Naigation Pages</p>
-                      </div>
-                      <div class="icon">
-                        <i class="ion ion-bag"></i>
-                      </div>
-                      <a href="/admin/pages/" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-success">
-                      <div class="inner">
-                        <h3>53<sup style="font-size: 20px">%</sup></h3>
-        
-                        <p>Category</p>
-                      </div>
-                      <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
-                      </div>
-                      <a href="/admin/category/" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-warning">
-                      <div class="inner">
-                        <h3>44</h3>
-        
-                        <p>Products</p>
-                      </div>
-                      <div class="icon">
-                        <i class="ion ion-person-add"></i>
-                      </div>
-                      <a href="/admin/products/" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                  </div>
-                  <!-- ./col -->
-            
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box bg-danger">
-                      <div class="inner">
-                        <h3>65</h3>
-        
-                        <p>Unique Visitors</p>
-                      </div>
-                      <div class="icon">
-                        <i class="ion ion-pie-graph"></i>
-                      </div>
-                      <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                  </div>
-                </div> 
+
+               <h1>All Pages</h1>
+               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                     <tr>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Salary</th>
+                        <th>Operations</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>raj k</td>
+                        <td>devs</td>
+                        <td>800</td>
+                        <td>
+                           <a class="btn btn-primary" href="/edit/raj k">Edit</a>                     
+                           <form style="display: inline;" action="/delete/raj k?_method=DELETE" method="POST">
+                              <button style="cursor: pointer;" type="submit" class="btn btn-danger ml-2">Delete</button>
+                           </form>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>hhh</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                           <a class="btn btn-primary" href="/edit/hhh">Edit</a>                     
+                           <form style="display: inline;" action="/delete/hhh?_method=DELETE" method="POST">
+                              <button style="cursor: pointer;" type="submit" class="btn btn-danger ml-2">Delete</button>
+                           </form>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+                 
+
+                 <center> <br> <a class="btn btn-success btn-md" href="/admin/pages/add-pages/">Add More Pages</a> </center>
+       
 
               <!-- end your content here -->
              </div>
